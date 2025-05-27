@@ -1,77 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGAA-Sistema Integrado de Gestão de Atividades Acadêmicas</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Home Sigaa</title>
 </head>
+
 <body>
-    <link rel="stylesheet" href="./style/style.css">
+    <header>
+        <h1><strong>UNIFESSPA - SIGAA -</strong> Sistema Integrado de Gestão de Atividades Acadêmicas</h1>
+    </header>
 
-    <div class="titulo">
-        <p><strong>UNIFESSPA - SIGAA - </strong>Sistema Integrado de Gestão de Atividades Acadêmicas</p>
-    </div>
-
-    <div class="falsa">
-      
-    </div>
 
     <div class="atencao">
-        <p><strong>ATENÇÃO! <br></strong>O sistema diferencia letras maiúsculas de minúsculas APENAS na senha, portanto ela deve ser digitada da mesma maneira que no cadastro.</p>
+        <div class="texto">
+            <h1>ATENÇÃO! </h1>
+        <p>O sistema diferencia letras maiúsculas de minúsculas APENAS na senha, portanto ela deve ser digitada da mesma
+            maneira que no cadastro.</p>
+        </div>
+        
     </div>
 
-    <div class="menu">
-        <a href="#">SIGAA<br>(Acadêmico)</a>
-        <a href="#">SIPAC<br>(Administrativo)</a>
-        <a href="#">SIGRH<br>(Recursos Humanos)</a>
-        <a href="#">SIGAdmin<br>(Administração e Comunicação)</a>
-        <a href="#">SIGEleicão<br>(Controle de Processos Eleitorais)</a>
-        <a href="#">SIGEventos<br>(Gestão de Eventos)</a>
-    </div> <!--menu-->
+    <nav class="menu-sistemas">
 
-    <div class="ajuda">
-        <p>Perdeu o e-mail de confirmação de cadastro?<a href="#"> Clique aqui para recuperar o e-mail de confirmação.</a></p>
-        <p>Esqueceu o login? <a href="#">Clique aqui para recuperar seu login.</a></p>
-        <p>Esqueceu a senha? <a href="#">Clique aqui para recuperar sua senha.</a></p>
+    <div class="menu-toggle" onclick="toggleSistemas()">☰ Sistemas</div>
+    <div class="sistemas-conteudo" id="menuSistemas">
+    
+        <div class="sistemas1">
+    
+            <div class="item">
+                <a href="#sigaa">
+                    <p><strong>SIGAA</strong></p>
+                    <p>Academico</p>
+                </a>
+            </div>
+    
+            <div class="item">
+                <a href="#sipac">
+                    <p><strong>SIPAC</strong></p>
+                    <p>Administrativo</p>
+                </a>
+            </div>
+    
+            <div class="item">
+                <a href="#">
+                    <p><strong>SIGRH</strong></p>
+                    <p>Recursos Humanos</p>
+                </a>
+            </div>
+    
+            <div class="item">
+                <a href="#">
+                    <p><strong>SIGED</strong></p>
+                    <p>Gestão Eletrônica de Documentos</p>
+                </a>
+            </div>
+    
+        </div>
+    
+        <div class="sistemas2">
+            <div class="item">
+                <a href="#">
+                    <p><strong>SIGEventos</strong></p>
+                    <p>Gestão de Eventos</p>
+                </a>
+            </div>
+    
+            <div class="item">
+                <a href="#">
+                    <p><strong>SIGAdmin</strong></p>
+                    <p>Administração e Comunicação</p>
+                </a>
+            </div>
+    
+            <div class="item">
+                <a href="#">
+                    <p><strong>SIGEleicão</strong></p>
+                    <p>Controle de Processos Eleitorais</p>
+                </a>
+            </div>
+        </div>
+    
     </div>
+    
+    </nav>
+    
 
-    <div class="entrar-sistema">
-        <p><strong>Entrar no Sistema</strong></p>
-    </div>
+    <div class="recuperacao">
+
+        <div class="imagem">
+            <img src="img/alerta.png" alt="">
+        </div>
+        <div class="links">
+            <p>Perdeu o e-mail de confirmação de cadastro? <a href="#"><strong>Clique aqui</strong></a></p>
+            <p>Esqueceu o login? <a href="#"><strong>Clique aqui</strong></a></p>
+            <p>Esqueceu a senha? <a href="#"><strong>Clique aqui</strong></a></p>
+        </div>
    
 
-    <div class="login">    
-        <form action="#">
-            <div class="usuario">
-                <label for="usuario">Usuário</label>
-                <input type="text">
-            </div>
-            <div class="senha">
-                <label for="senha">Senha</label>
-                <input type="password">
-            </div> 
-            <div class="botao"><input type="button" value="Entrar"></div>        
-        </form>
-    </div> <!--login-->
-
-<div class="cadastros">
-
-    <div class="cadastro-professor">
-        <p><strong>Professor ou Funcionário,</strong><br>caso ainda não possua cadastro no SIGAA, clique no link abaixo. <br> <img src="" alt=""> <br><a href="#">Cadastre-se aqui Professor ou Funcionário</a></p>
     </div>
-
-    <a href="#"><br>Acesse o Portal Público</a>
-
-    <div class="cadastro-aluno">
-        <p><strong>Aluno,</strong><br>caso ainda não possua cadastro no SIGAA,
-            clique no link abaixo. <br> <img src="" alt=""> <br><a href="#">Cadastre-se aqui Aluno</a></p>
-    </div>
-
+<div class="login">
+    <form class="formulario" action="">
+        <h1>Entrar no Sistema</h1>
+        <input type="text" name="usuario" placeholder="Usuario">
+        <input type="password" placeholder="Senha">
+        <button type="button" value="Entrar">Entrar</button>
+    </form>
 </div>
 
-    <div class="rodape">
-        <p>SIGAA | Centro de Tecnologia da Informação e Comunicação (CTIC) - (94) 2101-5945 | Copyright © 2006-2024 - UNIFESSPA - sigaa-docker <br> <a href="#">Histórico de modificações - v3.14.14_4d8008c7</a></p>
+<div class="cadastro">
+    <div class="professor">
+        <a href="#">
+            <p>
+               <strong>Professor ou Funcionário,</strong><br>
+                caso ainda não possua cadastro no SIGAA,
+                clique aqui.
+
+            </p>
+            <img src="img/professor.png" alt="Ilustração Aluna">
+        </a>
     </div>
-   
+
+    <div class="portal">
+        <a href=""><strong>Acesse o Portal Público</strong></a>
+    </div>
+
+    <div class="aluno">
+        <a href="#">
+            <p>
+               <strong>Aluno,</strong><br>
+                caso ainda não possua cadastro no SIGAA,
+                clique aqui.
+            </p>
+            <img src="img/aluna.png" alt="Ilustração Aluna">
+        </a>
+    </div>
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+<footer>
+    <p>SIGAA | Centro de Tecnologia da Informação e Comunicação (CTIC) - (94) 2101-5945 | Copyright © 2006-2025 - UNIFESSPA - sigaa-docker
+        Histórico de modificações - v3.14.14_6f68118c</p>
+</footer>
+
+
+
+<script>
+    function toggleSistemas() {
+      const menu = document.getElementById('menuSistemas');
+      menu.classList.toggle('ativo');
+    }
+
+
+</script>
+
+
 </body>
+
 </html>

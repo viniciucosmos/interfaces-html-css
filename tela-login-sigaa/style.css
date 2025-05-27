@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+
+header{
+    background-color: #333E68;
+    padding: 3px;
+    color: aliceblue;
+}
+h1{
+    font-size: 16px;
+}
+
+.atencao{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #CEDEF2;
+}
+
+
+.atencao h1{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.sistemas1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+    text-align: center;
+   
+}
+
+.sistemas2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+
+.item{
+    /*background-color: #CEDEF2;*/
+    border: 1px;
+    border-style: solid;
+    border-color: #333E68;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 150px; 
+    transition: 0.2s;
+}
+.item strong {
+    color: #202742;
+}
+
+.item:hover{
+    background-color: #bbc8d8;
+    transition: 0.2s;
+}
+
+.recuperacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+ 
+}
+
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #CEDEF2;
+   
+}
+
+input{
+    padding: 5px;
+    background-color: aliceblue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+button{
+    padding: 0.6em 1.2em;
+    border: 1px solid transparent;
+    color: aliceblue;
+  
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #333E68;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #0d1229;
+    transition: 0.5s;
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 30px;
+    text-align: center;
+    color: #333E68;
+}
+
+img{
+    width: 60px;
+    height: auto;
+    padding-top: 15px;
+}
+.aluno{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+    color: #333E68;
+}
+.professor{
+    color: #333E68;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+    
+}
+
+.aluno:hover, .professor:hover{
+   background-color: #bbc8d8;
+   transition: 0.2s;
+}
+footer{
+    text-align: center;
+    background-color: #333E68;
+    color: aliceblue;
+    padding: 10px;
+}
+.recuperacao a{
+   color: #333E68;
+}
+
+.menu-toggle {
+    display: none;
+    
+  }
+
+@media (max-width: 700px) {
+    .cadastro{
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1{
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        display: block;
+      }
+    
+      .sistemas-conteudo {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* ajuste conforme a altura da barra ou botão */
+        left: 0;
+        width: 100%;
+        background-color: white; /* ou outra cor de fundo */
+        z-index: 999; /* garante que fique por cima */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* opcional, pra destacar */
+      }
+
+    .sistemas-conteudo.ativo {
+    display: flex;
+    transition: 0.5s;
+  
+    }
+
+    
+}
+
+
